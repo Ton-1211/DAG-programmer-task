@@ -25,6 +25,7 @@ public class GameManagerScript : MonoBehaviour
 
     IEnumerator CountDown()
     {
+        playableDirector.RebuildGraph();
         yield return new WaitForSeconds(1);// カウントダウン前に少し待つ
         //float timer = soundTime;
         //for (int i = 0; i < 5; i++)
